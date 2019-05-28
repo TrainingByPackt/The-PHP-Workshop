@@ -1,1 +1,1 @@
-C:37:"PHPUnit\Runner\DefaultTestResultCache":44:{a:2:{s:7:"defects";a:0:{}s:5:"times";a:0:{}}}
+C:37:"PHPUnit\Runner\DefaultTestResultCache":336:{a:2:{s:7:"defects";a:0:{}s:5:"times";a:3:{s:97:"Chapter04\Test\TestDetermineOutputDirectory::testDetermineOutputDirectoryUsesDefaultSystemTempDir";d:0.001;s:73:"Chapter04\Test\TestDetermineOutputDirectory::testUsesDefaultSystemTempDir";d:0;s:82:"Chapter04\Test\TestDetermineOutputDirectory::testUsesDirectoryArgumentWhenProvided";d:0;}}}
