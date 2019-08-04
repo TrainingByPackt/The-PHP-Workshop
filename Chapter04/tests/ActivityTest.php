@@ -5,7 +5,7 @@ namespace Chapter04\Test;
 use PHPUnit\Framework\TestCase;
 
 // include the file that contains the functions for the activity
-include_once __DIR__ . '/../activity.php';
+include_once __DIR__ . '/../activity-functions.php';
 
 class ActivityTest extends TestCase
 {
@@ -152,7 +152,7 @@ class ActivityTest extends TestCase
     private function checkFunction(string $functionName): void
     {
         if (false === function_exists($functionName)) {
-            $this->markTestIncomplete("No function $functionName found... did you write your functions in Chapter04/activity.php?");
+            $this->markTestIncomplete("No function $functionName found... did you write your functions in Chapter04/activity-functions.php?");
         }
     }
 
