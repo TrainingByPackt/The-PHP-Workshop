@@ -64,16 +64,15 @@ $motorcycle->stop();
 echo "The motorcycle is " . ($motorcycle->getEngineStatus()?'running':'stopped') . "\n";
 */
 
-
+/*
 $motorcycle = new Motorcycle('Kawasaki', 'Ninja', 'Orange', 2, '53WVC14598');
 
 $motorcycle->changeSpeed(45);
 $motorcycle->changeGear(3);
 $motorcycle->applyBreak();
+*/
 
 
-/*
 $motorcycle = new Motorcycle('Kawasaki', 'Ninja', 'Orange', 2, '53WVC14598');
 $motorcycle->setPrice(5000);
 echo "The price is  ". $motorcycle->getPrice() . "\n";
-*/

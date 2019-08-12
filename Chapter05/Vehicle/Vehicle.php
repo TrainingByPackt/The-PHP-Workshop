@@ -1,6 +1,8 @@
 <?php
+require_once 'PriceTrait.php';
 
 	abstract class Vehicle {
+		use PriceTrait;
 
 		public $make;
 		public $model;
@@ -72,14 +74,6 @@
 		
 		function getEngineStatus(){
 			return $this->engineStatus;
-		}
-
-		function getPrice(){
-			return $this->price;
-		}
-
-		function setPrice($price){
-			$this->price = $price;
 		}
 
 		function __set($attribute, $value)
