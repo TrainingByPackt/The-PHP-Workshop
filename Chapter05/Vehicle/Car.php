@@ -1,9 +1,9 @@
 <?php
 
-require_once 'Vehicle.php';
+require_once 'AbstractVehicle.php';
 require_once 'DriveInterface.php';
 
-class Car extends Vehicle implements DriveInterface {
+class Car extends AbstractVehicle implements DriveInterface {
 
 	public $doors = 4; 
 	public $passengerCapacity = 5;

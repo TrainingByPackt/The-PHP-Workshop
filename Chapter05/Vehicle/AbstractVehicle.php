@@ -1,7 +1,7 @@
 <?php
 require_once 'PriceTrait.php';
 
-	abstract class Vehicle {
+	abstract class AbstractVehicle {
 		use PriceTrait;
 
 		public $make;

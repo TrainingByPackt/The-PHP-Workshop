@@ -1,9 +1,9 @@
 <?php
 
-require_once 'Vehicle.php';
+require_once 'AbstractVehicle.php';
 require_once 'DriveInterface.php';
 
-class Motorcycle extends Vehicle implements DriveInterface {
+class Motorcycle extends AbstractVehicle implements DriveInterface {
 	public $noOfWheels =  2;
 	public $stroke = 4;//Todo: change to style: cruiser, sport bike, standard
 
@@ -36,7 +36,7 @@ class Motorcycle extends Vehicle implements DriveInterface {
 
 
 
-$motorcycle = new \Motorcycle('Kawasaki', 'Ninja', 'Orange', 2, '53WVC14598');
+$motorcycle = new Motorcycle('Kawasaki', 'Ninja', 'Orange', 2, '53WVC14598');
 
 echo "Vehicle Type: " . get_class($motorcycle) . "\n";
 echo " Make: " . $motorcycle->make . "\n";
