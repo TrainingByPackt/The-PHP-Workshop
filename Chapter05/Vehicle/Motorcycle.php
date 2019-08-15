@@ -1,9 +1,9 @@
 <?php
 
 require_once 'Vehicle.php';
-require_once 'Drive.php';
+require_once 'DriveInterface.php';
 
-class Motorcycle extends Vehicle implements Drive {
+class Motorcycle extends Vehicle implements DriveInterface {
 	public $noOfWheels =  2;
 	public $stroke = 4;//Todo: change to style: cruiser, sport bike, standard
 
@@ -35,8 +35,8 @@ class Motorcycle extends Vehicle implements Drive {
 }
 
 
-/*
-$motorcycle = new Motorcycle('Kawasaki', 'Ninja', 'Orange', 2, '53WVC14598');
+
+$motorcycle = new \Motorcycle('Kawasaki', 'Ninja', 'Orange', 2, '53WVC14598');
 
 echo "Vehicle Type: " . get_class($motorcycle) . "\n";
 echo " Make: " . $motorcycle->make . "\n";
@@ -45,7 +45,7 @@ echo " Color: " . $motorcycle->color . "\n";
 
 echo " No of wheels: " . $motorcycle->noOfWheels . "\n";
 echo " No of strokes: " . $motorcycle->stroke . "\n\n";
-*/
+
 
 
 /*
@@ -72,7 +72,8 @@ $motorcycle->changeGear(3);
 $motorcycle->applyBreak();
 */
 
-
+/*
 $motorcycle = new Motorcycle('Kawasaki', 'Ninja', 'Orange', 2, '53WVC14598');
 $motorcycle->setPrice(5000);
 echo "The price is  ". $motorcycle->getPrice() . "\n";
+*/
