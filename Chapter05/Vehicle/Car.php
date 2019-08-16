@@ -13,7 +13,7 @@ class Car extends AbstractVehicle implements DriveInterface
 
 	private $hasKeyinIgnition = true;
 
-	public function start()
+	final public function start()
 	{
 		if($this->hasKeyinIgnition) {
 			$this->engineStatus = true;
@@ -91,7 +91,7 @@ $car->honk('gently');
 $car->honk('louder', 'siren');
 */
 
-
+/*
 $car = new Car('Honda', 'Civic', 'Red', 4, '23CJ4567');
 
 $car->start();
@@ -103,3 +103,4 @@ $car->changeSpeed(35);
 $car->applyBreak();
 $car->stop();
 echo "The car is " . ($car->getEngineStatus()?'running':'stopped')  . PHP_EOL;
+*/
