@@ -1,6 +1,7 @@
 <?php
 
-class MyMagicMethodClass {
+class MyMagicMethodClass 
+{
 
 
     public function __call($method, $arguments)

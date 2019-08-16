@@ -1,6 +1,7 @@
 <?php
 
-class MyMagicClass {
+class MyMagicClass 
+{
 
     private $arr = array('dynamicAttribute' => NULL,'anotherAttribute' => NULL);
 
@@ -28,7 +29,7 @@ class MyMagicClass {
 
 $object = new MyMagicClass();
 $object->dynamicAttribute = 'I am magic';
-echo $object->dynamicAttribute . "\n";
+echo $object->dynamicAttribute . PHP_EOL;
 
 $object->testAttribute = 'test'; //outputs, Error: the attribute is not allowed. 
-echo $object->testAttribute . "\n"; //outputs, Error: undefined attribute. 
+echo $object->testAttribute  . PHP_EOL; //outputs, Error: undefined attribute. 

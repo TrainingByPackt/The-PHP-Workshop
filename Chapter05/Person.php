@@ -1,21 +1,26 @@
 <?php
-class Person {
+class Person 
+{
 	
 	public $name;
 
-	function __construct($username){
+	function __construct($username)
+	{
 		$this->name = $username;
 	}
 	
-	function getName(){
+	function getName()
+	{
 		return $this->name;
 	}
 
-	function setName(){
+	function setName()
+	{
 		$this->name = 'Jhon Doe';
 	}
 
-	function sayGreetings(){
+	function sayGreetings()
+	{
 		
 		if(date('G') < 12) {
 			$greetings = 'Good Morning';
@@ -28,7 +33,8 @@ class Person {
 		echo "$greetings $this->name! ";
 	}
 
-	function __destruct(){
+	function __destruct()
+	{
 		echo 'The object has been removed.';
 	}
 
@@ -37,5 +43,5 @@ class Person {
 $person1 = new Person('John Doe');
 $person2 = new Person('Jen Doe');
 
-echo $person1->name . "\n"; //prints John Doe
-echo $person2->name . "\n"; //prints Jen Doe
+echo $person1->name  . PHP_EOL; //prints John Doe
+echo $person2->name  . PHP_EOL; //prints Jen Doe

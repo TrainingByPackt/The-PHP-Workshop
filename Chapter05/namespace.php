@@ -2,10 +2,12 @@
 namespace MyNamespaceA;
 
 const MYCONST = 'constant';
-function myFunction(){
+function myFunction() 
+{
     echo 'from namespace A';
 }
-class MyClass{
+class MyClass
+{
     public function hello(){
         echo 'hello ';
     }
