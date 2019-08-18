@@ -91,7 +91,7 @@ $car->honk('gently');
 $car->honk('louder', 'siren');
 */
 
-/*
+
 $car = new Car('Honda', 'Civic', 'Red', 4, '23CJ4567');
 
 $car->start();
@@ -103,4 +103,3 @@ $car->changeSpeed(35);
 $car->applyBreak();
 $car->stop();
 echo "The car is " . ($car->getEngineStatus()?'running':'stopped')  . PHP_EOL;
-*/

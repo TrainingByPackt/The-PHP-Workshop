@@ -8,7 +8,7 @@ echo "Make: " . $vehicle->getMake() . PHP_EOL;
 echo "Model: " . $vehicle->getModel() . PHP_EOL;
 echo "Color: " . $vehicle->getColor() . PHP_EOL;
 echo "No of wheels: " . $vehicle->getNoOfWheels() . PHP_EOL;
-echo "Engine No: " . $vehicle->getEngineNumber() . PHP_EOL;
+echo "Engine No: " . $vehicle->getEngineNumber() . PHP_EOL . PHP_EOL;
 
 $vehicle1 = new Vehicle('Honda', 'Civic', 'Red', 4, '23CJ4567');
 echo "Make: " . $vehicle1->getMake() . PHP_EOL;
