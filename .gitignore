@@ -1,6 +1,6 @@
 Chapter04/vendor/
 Chapter09/vendor/
 Chapter09/logs/
-Chapter10/vendor/
+Chapter10/guzzle-example/vendor/
 tests/.phpunit.result.cache
 .DS_Store
