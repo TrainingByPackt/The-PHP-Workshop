@@ -4,3 +4,4 @@ Chapter09/logs/
 Chapter10/guzzle-example/vendor/
 tests/.phpunit.result.cache
 .DS_Store
+/.idea/

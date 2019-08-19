@@ -1,18 +1,22 @@
 <?php
-class MySimpleClass{
+class MySimpleClass
+{
 	public $publicMember = 'Public Memeber';
 	protected $protectedMember = 'Protected Member';
 	private $privateMember = 'Private Member';
 
-	public function myPublicFunction(){
+	public function myPublicFunction()
+	{
 		//function body
 	}
 
-	protected function myProtectedFunction(){
+	protected function myProtectedFunction()
+	{
 		//function body
 	}
 
-	private function myPrivateFunction(){
+	private function myPrivateFunction()
+	{
 		//function body
 	}
 }

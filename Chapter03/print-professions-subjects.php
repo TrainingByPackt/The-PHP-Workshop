@@ -5,12 +5,10 @@ $professions = ["Doctor", "Teacher", "Programmer", "Lawyer", "Athlete"];
 $subjects =  ["Mathematics", "Computer Programming", "Business English", "Graph Theory"];
 
 foreach ($professions as $profession) {
-        echo "The Profession is $profession. \n";
+        echo "The Profession is $profession. " . PHP_EOL;
 
-        if ($profession==='Teacher') {
-                foreach ($subjects as $name) {
-                        echo " $name \n";
-                }
-	}
+        for ($i = 0; $profession === 'Teacher' && $i < sizeof($subjects); $i++) {
+                echo " ". $subjects[$i] . PHP_EOL;
+        }
 }
 
