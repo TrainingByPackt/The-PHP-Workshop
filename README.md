@@ -24,13 +24,7 @@ With its explicit focus on demonstrating how you can be successful with PHP, The
 * Learn how to use Composer – PHP's package manager – to include third-party packages in your applications 
 * Explore what are web services and how to connect them to your applications with Guzzle 
 
-### Hardware requirements
-For an optimal student experience, we recommend the following hardware configuration:
-* Processor: Intel Core i5 or equivalent
-* Memory: 4 GB RAM
-* Storage: 10 GB available space
-
-
+### The examples of this title has been implemented in the Windows/MAC/Linux operating system.
 
 ### Software requirements
 You’ll also need the following software installed in advance:
