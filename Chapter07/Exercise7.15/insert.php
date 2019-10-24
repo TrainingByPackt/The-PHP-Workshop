@@ -3,10 +3,10 @@
 /** @var PDO $pdo */
 $pdo = require 'db-common/connection.php';
 
-$insertStmt = $pdo->prepare("INSERT INTO users (email) VALUES (:email)");
+$insertStmt = "INSERT INTO users (email) VALUES ('john.smith@mail.com')";
 
-if ($insertStmt->execute([':email' => $argv[1] ?? null]) === false) {
-    list(, , $driverErrMsg) = $insertStmt->errorInfo();
+if ($pdo->exec($insertStmt) === false) {
+    list(, , $driverErrMsg) = $pdo->errorInfo();
     echo "Error inserting into the users table: $driverErrMsg" . PHP_EOL;
     return;
 }
